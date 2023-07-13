@@ -23,7 +23,7 @@ sphinx:
   # fail_on_warning: true
 
 # 必要に応じて、PDF や ePub などの追加形式でドキュメントを作成します
-# formats:
+#formats:
 #   - pdf
 #    - epub
 
