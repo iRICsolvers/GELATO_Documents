@@ -1,0 +1,18 @@
+@import url("theme.css");
+
+/* 横幅の制限を解除 */
+.wy-nav-content {
+    max-width: 80%;
+}
+
+figure {
+	text-align: center;
+}
+
+figcaption {
+	text-align: center;
+}
+
+code-block-caption {
+	text-align: center;
+}
