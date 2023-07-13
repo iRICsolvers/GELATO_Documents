@@ -16,7 +16,7 @@ build:
 
 # Sphinx を使用して「docs/」ディレクトリにドキュメントを構築する
 sphinx:
-  configuration: source\conf.py
+  configuration: source/conf.py
   # 別のビルダーを使用するように Sphinx を構成できます。たとえば、より単純な URL には dirhtml ビルダーを使用します。
   # builder: "dirhtml"
   # Fail on all warnings to avoid broken references
