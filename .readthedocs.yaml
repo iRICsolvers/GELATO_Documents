@@ -16,15 +16,15 @@ build:
 
 # Sphinx を使用して「docs/」ディレクトリにドキュメントを構築する
 sphinx:
-  configuration: conf.py
+  configuration: source/conf.py
   # 別のビルダーを使用するように Sphinx を構成できます。たとえば、より単純な URL には dirhtml ビルダーを使用します。
   # builder: "dirhtml"
   # Fail on all warnings to avoid broken references
   # fail_on_warning: true
 
 # 必要に応じて、PDF や ePub などの追加形式でドキュメントを作成します
-formats:
-  - pdf
+#formats:
+#   - pdf
 #    - epub
 
 # オプションですが推奨されます。ドキュメントを作成するために必要な Python 要件を宣言します。
