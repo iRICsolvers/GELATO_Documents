@@ -910,7 +910,7 @@ Cloning of the Tracers
 In the main menu, select [Calculation Condition]->[Setting] to show [Calculation Condition].
 In the [Calculation Condition] window, select [Tracer Cloning and Amalgamation], set parameters as
 :numref:`02_clone01`.
-Select [Diffusion Condition] and set [A=1] and press[OK] as :numref:`02_clone01-1`.
+Select [Diffusion Condition] and set [A=10] and press[OK] as :numref:`02_clone01-1`.
 Then execute the GELATO solver by choosing [Simulation]->[Run], and show the results (:numref:`02_clone10`).
 
 .. _02_clone01:
