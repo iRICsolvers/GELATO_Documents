@@ -37,7 +37,7 @@ Nays Drift Wood 2D)によって行われる。
 
 GELATOでの計算は以下の手順で行われる。
 
-- 流れの計算ソルバーによる流れの計算(Nays2dh、Nays2dFlood、Nays2d+など)
+- 流れの計算ソルバーによる流れの計算(Nays2DH、Nays2dFlood、Nays2d+など)
 
 - 流れの計算結果の保存(CGNSファイル)
 

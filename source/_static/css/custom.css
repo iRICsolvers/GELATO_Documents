@@ -16,3 +16,9 @@ figcaption {
 code-block-caption {
 	text-align: center;
 }
+
+/* テーブルの中央配置 */
+table.docutils {
+    margin-left: auto;
+    margin-right: auto;
+}
