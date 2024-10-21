@@ -249,7 +249,7 @@ Set Calculation Condition
 From the main menu, select [calculation Condition]->[Setting], and
 input parameters in the [Calculation Condition] window as the following figures of
 :numref:`03_018`, :numref:`03_019`,  :numref:`03_020`,  :numref:`03_021`,  :numref:`03_022`
-and :numref:`03_023`.  When you finished to input parameters, press [Save and Close].
+and :numref:`03_023`.  When you finished to input parameters, press [OK].
 
 .. _03_018:
 

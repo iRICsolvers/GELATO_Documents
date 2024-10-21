@@ -37,8 +37,7 @@ Grid Generation
 -------------------
 
 
-From the main menu of the screen, :numref:`01_mudai`, choose [Grid]->[Select Algorithm to Create Grid]
-as :numref:`Select_Alg`.
+From the main menu of the screen, :numref:`01_mudai`, choose [Grid]->[Select Algorithm to Create Grid] as :numref:`Select_Alg`.
 
 .. _Select_Alg:
 
@@ -48,9 +47,7 @@ as :numref:`Select_Alg`.
 
    : Select Algorithm to Create Grid
 
-In the [Select Grid Creating Algorithm] window, 
-select [Simple Straight and Meandering Channel Creator] and click [OK] 
-(:numref:`01_kanni`).
+In the [Select Grid Creating Algorithm] window, select [Simple Straight and Meandering Channel Creator] and click [OK] (:numref:`01_kanni`).
 
 .. _01_kanni:
 
@@ -144,12 +141,26 @@ when you finish, and close this window.
    :Time parameters
 
 
-Select [Time] and set parameters as :numref:`01_joken_4` and click [Save and Close].
+Select [Time] and set parameters as :numref:`01_joken_4` and click [OK].
 
 .. _res_Nays2DH:
 
 Flow calculation run by Nays2DH
 ----------------------------------
+
+From the main menu, when you select [Simulation]->[Run], you will get the message like :numref:`01_warning` .
+Then, select [OK] and save the project with an appropriate name. At this time, do not save the project as an ipro file, but save it as a project.  
+
+.. _01_warning:
+
+.. figure:: images/01/warning.png
+   :align: center
+   :width: 400pt
+
+   :warning
+
+| A window as :numref:`01_jikko` is shown during the computation, and :numref:`01_keisan` appears when the computation is finished. 
+| Then press [OK], and the computation is completed.
 
 .. _01_jikko:
 
@@ -159,13 +170,6 @@ Flow calculation run by Nays2DH
 
    :Window when the solver is running
 
-From the main menu, when you select [Simulation]->[Run], 
-you will get the message like
-"We recommend you to save the project before running solver.  Do you want to save?" 
-Select [Yes] and save the project with an appropriate name.  At this time,  
-do not save the project as an ipro file, but save it as a project. 
-A window as :numref:`01_jikko` is shown during the computation, and :numref:`01_keisan` 
-appears when the computation is finished.  Then press [OK], and the computation is completed.
 
 .. _01_keisan:
 
@@ -177,20 +181,16 @@ appears when the computation is finished.  Then press [OK], and the computation 
 
 
 
-**Important**
-Whenever you finished the computation,  select [File]->[Save] from the menu bar to save the results
-as  :numref:`01_hozon` .
-This result is important for later analysis by GELATO.
+.. note::
+   Whenever you finished the computation,  select [File]->[Save] from the menu bar to save the results as  :numref:`01_hozon` . This result is important for later analysis by GELATO.
 
-.. _01_hozon:
+   .. _01_hozon:
 
-.. figure:: images/01/hozon.png
-   :align: center
-   :width: 100%
+   .. figure:: images/01/hozon.png
+      :align: center
+      :width: 100%
 
-   :Saving computational results
-
-
+      :Saving computational results
 
 
 Visualization of the calculated results
@@ -291,7 +291,7 @@ Then the particle animation starts.
    :align: center
    :width: 100%
 
-   : Particle animation by NAys2DH
+   : Particle animation by Nays2DH
 
 As can be seen in :numref:`01_kekka_13`, since the  
 sub-grid scale turbulence is not included in the output velocity from the solver.
@@ -316,7 +316,7 @@ Select "GELATO" and click "OK" ( :numref:`01_GELATO_kido` ).
    : Selecting GELATO and Starting
 
 
-A window with [Untitled -iRIC 3.0.xxxx] [GELATO] appears, and the GELATO session is started.
+A window with [Untitled -iRIC 4.x.xxxx] [GELATO] appears, and the GELATO session is started.
 (:numref:`01_GELATO_openning` )
 
 .. _01_GELATO_openning:
@@ -350,7 +350,7 @@ Right click [Grid(No Data)] and select [Import] as (:numref:`01_GELATO_import` )
    : Select CGNS file contains grid data
 
 As shown in :numref:`01_GELATO_koshi_1`, select [Case1.cgn] which contains the grid data
-used in the previous section of [Computational Results of NAys2DH], and click [Open].
+used in the previous section of [Computational Results of Nays2DH], and click [Open].
 
 .. _01_GELATO_wng:
 
@@ -438,14 +438,12 @@ the CGNS file produced by the Nays2DH computation.( :ref:`res_Nays2DH` ).
 Launch GELATO
 ^^^^^^^^^^^^^^^
 
-From the main menu bar, select [Simulation]->[Run], then you are asked 
-[Do you want to save?] as :numref:`01_GELATO_jikko_0`.
-When you click [Yes] and save project, the computation starts as 
-:numref:`01_GELATO_jikko_1`.
+From the main menu bar, select [Simulation]->[Run], then you are asked as :numref:`01_GELATO_jikko_0`.
+When you click [OK] and save project, the computation starts as :numref:`01_GELATO_jikko_1`.
 
 .. _01_GELATO_jikko_0:
 
-.. figure:: images/01/GELATO_jikko_0.png
+.. figure:: images/01/warning.png
    :align: center
    :width: 400pt
 
@@ -484,6 +482,16 @@ then [2D Post Processing Window] appears as :numref:`01_GELATO_kekka_0`.
 
    : 2D Post Processing Window
 
+Right-click [Primary Nomal Tracers] and [Secondary Nomal Tracers] in the [Object Browser] and click [propertie]. 
+Then [Particles Scalar Setting] that appears,and you can set the primary and secondary have different colors by setting like :numref:`01_GELATO_kekka_2`.
+
+.. _01_GELATO_kekka_2:
+
+.. figure:: images/01/GELATO_kekka_2.png
+   :align: center
+   :width: 100%
+
+   : Setting particles colors
 
 From the main menu, select [Animation]->[Start/Stop] as :numref:`01_GELATO_kekka_1`,
 animation starts ( :numref:`01_GELATO_00` ).
@@ -496,17 +504,6 @@ animation starts ( :numref:`01_GELATO_00` ).
 
    : Visualization of computational results
 
-Right-click [Primary Nomal Tracers] and [Secondary Nomal Tracers] in the [Object Browser] and click [propertie]. 
-Then [Particles Scalar Setting] that appears,and you can set the primary and secondary have different colors by setting like :numref:`01_GELATO_kekka_2`.
-
-.. _01_GELATO_kekka_2:
-
-.. figure:: images/01/GELATO_kekka_2.png
-   :align: center
-   :width: 100%
-
-   : Setting particles colors
-
 .. _01_GELATO_00:
 
 .. figure:: images/01/GELATO_00.gif
@@ -515,8 +512,7 @@ Then [Particles Scalar Setting] that appears,and you can set the primary and sec
 
    : Tracer movement(No diffusivity)
 
-It is obviously very simple because it  doesn't including any turbulent effect 
-(:numref:`01_GELATO_00`).
+It is obviously very simple because it  doesn't including any turbulent effect (:numref:`01_GELATO_00`).
 
 Single Tracer Tracking(With Turbulent Diffusivity)
 -----------------------------------------------------
@@ -526,8 +522,7 @@ Setting Computational Condition
 
 Change the calculation conditions to take into account for the effect of turbulent diffusion. 
 From the main menu, select [Calculation Conditions] → [Setting], and show the :numref:`01_GELATO_joken_5`.
-Set [Diffusion Condition]->[Diffusivity Correction]->[Yes], 
-set the parameter [A Value] to [1], and then click "Save and Close".
+check the box of [Diffusion Condition]->[Diffusivity Correction] , set the parameter [A Value] to [1], and then click "OK".
 
 .. _01_GELATO_joken_6:
 

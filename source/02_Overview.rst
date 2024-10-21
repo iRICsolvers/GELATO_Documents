@@ -147,11 +147,8 @@ and [CGNS file to load flow calculation results] of the bar.
 Computational grids used in GELATO 
 ----------------------------------
 
-In most cases, the computational grid is imported from the GNS files
-which contains the computational flow results.
-As shown in  :numref:`import_grid` , from the "Object Browser" in the "Pre-Preprocessing Window",
-Right-click [Grid(No data)], select [Import], and select a 
-CGNS file which contains the grid information as :numref:`import_grid_1` .
+In most cases, the computational grid is imported from the CGNS files which contains the computational flow results.
+As shown in  :numref:`import_grid` , from the "Object Browser" in the "Pre-Preprocessing Window", Right-click [Grid(No data)], select [Import], and select a CGNS file which contains the grid information as :numref:`import_grid_1` .
 In most cases in iRIC, the file name is [Case1.cgn].
 
 .. _import_grid:
