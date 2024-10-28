@@ -32,6 +32,9 @@ numfig_format = {
 
 language = 'ja'
 
+# LaTeX の docclass 設定
+latex_docclass = {'manual': 'jsbook'}
+
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
