@@ -119,7 +119,7 @@ Since the GELATO tracks tracers in a two-dimensional "flow" in a Lagrangian mann
 the results of the "flow" calculation have to be prepared in advance( :numref:`flow` ).
 By default, the GELATO read the flow information stored in the CGNS files with 
 2-dimensional structured grid format.  At present, flow solvers which satisfy this condition in iRIC
-(as of April 1, 2021), are Nays2dH, Nays2dFlood, Nays2d+, and FastMech.
+(as of April 1, 2021), are Nays2DH, Nays2dFlood, Nays2d+, and FastMech.
 For more information about the flow calculation models available in iRIC, 
 please visit the iRIC website (https://i-ric.org/) for more details.
 

@@ -1,5 +1,35 @@
 @import url("theme.css");
 
+h1 {
+	background-color: #d6d6d6;
+    border-bottom: 2px solid #343131;
+}
+
+h2 {
+    border-bottom: 2px solid #343131;
+    margin-top: 80px;
+}
+
+h3 {
+    border-bottom: 1px solid #d6d6d6;
+    margin-top: 80px;
+}
+
+/* 見出しに含まない見出し */
+.nonhead {
+    font-size: x-large;
+    border-bottom: 2px solid #343131;
+}
+
+.docutils {
+	margin-top: 80px;
+}
+
+/* テーブル内で改行 */
+.wy-table-responsive table td, .wy-table-responsive table th {
+    white-space: normal;
+}
+
 /* 横幅の制限を解除 */
 .wy-nav-content {
     max-width: 80%;

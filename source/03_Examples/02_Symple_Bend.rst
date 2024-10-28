@@ -1,6 +1,6 @@
-==================================================================
+========================================================================================================================
 [Example 2] Suspended Material Transport in a Simple Bed Flume
-==================================================================
+========================================================================================================================
 
 In this section, we perform the following computations using a simple curved flume with straight inlet
 out let parts.  The Cross section of the flume is composed with a compound channel in which both the low water 
@@ -34,13 +34,13 @@ The computational exercises in this section is conducted as the following proced
 - Tracer tracking by GELATO. Check the effect of turbulent diffusivity by changing parameter
 
 Calculation of Flow and bed deformation by Nasy2DH
-========================================================
+========================================================================================================================
 
 Select a Solver
--------------------
+------------------------------------------------------------------------------------------------------------------------
 
 From the iRIC startup screen, click [Create New Project], and select 
-[Nays2dH iRIC3x 1.0 64bit] in the :numref:`02_Select_Nays2dh`.
+[Nays2DH iRIC4x 1.0 64bit] in the :numref:`02_Select_Nays2dh`.
 
 
 .. _02_Select_Nays2dh:
@@ -51,7 +51,7 @@ From the iRIC startup screen, click [Create New Project], and select
 
    : Solver Selection
 
-A window titled as「Untitled- iRIC 3.x.xxxx [Nays2DH iRIC4X 1.0 64bit]」appears.
+A window titled as「Untitled- iRIC 4.x.xxxx [Nays2DH iRIC4X 1.0 64bit]」appears.
 
 .. _02_mudai:
 
@@ -63,7 +63,7 @@ A window titled as「Untitled- iRIC 3.x.xxxx [Nays2DH iRIC4X 1.0 64bit]」appear
 
 
 Grid Creation 
-----------------
+------------------------------------------------------------------------------------------------------------------------
 
 Select from the main menu [Grid]->[Select Algorithm]. Then a window appears as
 :numref:`02_koshi1`, select [2d arc grid generator (Compound Channel)] and click
@@ -169,7 +169,7 @@ by expanding and rotating, as demonstrated in :numref:`02_koshi8`.
    : Change downstream end cell attribute to fixed bed
 
 Setting Computational Condition
-------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
 Show the [Calculation Condition] window by selecting [Calculation Condition]->[Setting],
 and in the [Group] of [Solver Type], [Boundary Condition], [Time] and [Bed Material]
@@ -229,7 +229,7 @@ When you finished the settings of all the computational condition parameters,
 press [OK] in the [Calculation Condition] window.
 
 Run Nays2DH
---------------
+------------------------------------------------------------------------------------------------------------------------
 
 Before executing the Nays2DH, select [File]->[Save as Project] and save the project. 
 Here we save the project as a name of [Nays2DH_flow_bed] (:numref:`02_save_project`)
@@ -242,13 +242,11 @@ Here we save the project as a name of [Nays2DH_flow_bed] (:numref:`02_save_proje
 
    : Save Project
 
-From the main menu, select [Simulation]->[Run], then a window asking [Do you want to save?] appears
-as :numref:`02_jikko1`. Then press [Yes], save as a project, and the computation starts running 
-as :numref:`02_jikko2`.
+From the main menu, when you select [Simulation]->[Run], you will get the message like :numref:`02_jikko1` . Then press [OK], save as a project, and the computation starts running as :numref:`02_jikko2`.
 
 .. _02_jikko1:
 
-.. figure:: images/02/save_project3.png
+.. figure:: images/01/warning.png
    :align: center
    :width: 400pt
 
@@ -260,12 +258,12 @@ as :numref:`02_jikko2`.
    :align: center
    :width: 100%
 
-   : 「Nays2dH is running」
+   : 「Nays2DH is running」
  
 When the computation finished, save the results by selecting [Calculation Result]->[Save], from the main menu.
 
 Display the Calculation Results
-----------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
 Open a [Post Processing Window] by selecting [Calculation Result]->[Open new 2D Post-Processing Window] as
 :numref:`02_hyoji1-0`.   
@@ -305,7 +303,7 @@ as :numref:`02_hyoji2`, and set parameters as marked with red squares in the
 
    : [Arrow Settings]
 
-Put the [Time Scale Bar] back to zero, select [Animation]->[Srart/Stop] to
+Put the [Time Scale Bar] back to zero, select [Animation]->[Start/Stop] to
 start animation as :numref:`02_hyoji3`.
 
 .. _02_hyoji3:
@@ -327,7 +325,7 @@ As shown in :numref:`02_hyoji4`, it is shown that the bed elevation change reach
    : Animation of velocity vectors and bed elevation changes
 
 Export the Computational Results
------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
 In order to use the calculated bed elevation as an boundary conditions for the quasi-3D flow calculation 
 by Nays2d+ in the next section, we export the calculated results to a text file.
@@ -353,7 +351,7 @@ choose [Format] as [Topography Files(\*.tpo)].
 
    : Exporting Computational Results(2)
 
-The output folder can be any name, and uncheck the checkbox at [All timesteps],
+The output folder can be any name, and uncheck the checkbox at [All time steps],
 and set [Start] and [End] as 10,800.
 Then click [OK] to complete the export of the calculation Results
 :numref:`02_export3`. 
@@ -380,11 +378,13 @@ all files except [Result_1_Elevation(m).tpo] can be deleted.
 
    : Exporting Computational Results(4)
 
+.. _02_Flow_Calculation_by_Nays2d+:
+
 Quasi-3D Flow Calculation by Nays2d+
-=======================================
+========================================================================================================================
 
 Selecting a Solver
----------------------
+------------------------------------------------------------------------------------------------------------------------
 
 From the iRIC startup screen, click [Create New Project], and select 
 [Nays2d+] in the :numref:`02_select2`, and press [OK].
@@ -398,10 +398,10 @@ From the iRIC startup screen, click [Create New Project], and select
    : Solver selection of Nays2d+
 
 Importing Computational Grid, Channel Bed Elevation and Mapping
----------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
 Importing Grid
-^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 From the main menu, select [Import]->[Grid], and choose [Case1.cgn] in the folder of [Nays2DH_floe_bed] which 
 was created in the previous section.  While importing, a warning as 
@@ -424,7 +424,7 @@ was created in the previous section.  While importing, a warning as
    : [Grid import complete]
 
 Import Bed Elevation
-^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 From the main menu, select [Import]->[Geographic Data]->[Elevation](:numref:`02_import2`).
 
@@ -437,7 +437,7 @@ From the main menu, select [Import]->[Geographic Data]->[Elevation](:numref:`02_
    : Import Elevation
 
 In the import file selection window, :numref:`02_import3`, assign the file [Results_1_Elevation(m).tpo], 
-which was exported from Nays2dH calculated results in the previous section.
+which was exported from Nays2DH calculated results in the previous section.
 
 .. _02_import3:
 
@@ -470,7 +470,7 @@ you can leave it as it is, and press [OK] to complete the import the [Bed Elevat
    : Bed Elevation Data Import Completed
 
 Execute Mapping
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The imported bed elevation data is mapped onto the imported computational grid.
 Select [Grid]->[Attribute Mapping]->[Execute] as :numref:`02_mapping2`.
@@ -507,7 +507,7 @@ When the mapping is completed, press [OK] as :numref:`02_mapping4`.
 
 
 Setting Calculation Condition for Nays2d＋
---------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
 In the window of [Calculation Condition] which appears when you select [Calculation Condition]->[Setting],
 set parameters in the [Groups] of [Discharge and downstream water surface elevation], 
@@ -577,7 +577,7 @@ When you finish setting all the calculation condition, press [OK] in the
 
 
 Execute Nays2d+
---------------------------
+------------------------------------------------------------------------------------------------------------------------
 
 We will skip the explanation of how to executing Nays2d+ because it is exactly same as other
 solvers.  However, it is recommended that you save the project before running the calculation. 
@@ -605,24 +605,24 @@ computation of GELATO as input data.  Be sure to save the result using
    : Save the Results of the Computation (Don't Forget!)
 
 Tracer Tracking by GELATO 
-=======================================
+========================================================================================================================
 
 Select a Solver
-------------------
+------------------------------------------------------------------------------------------------------------------------
 
 From the iRIC startup screen, select [New Project], and in the solver selection screen appears. 
 Select "GELATO" and click "OK" (:numref:`02_select_GELATO`).
 
 .. _02_select_GELATO:
 
-.. figure:: images/02/select_GELATO.png
+.. figure:: images/01/GELATO_kido.png
    :align: center
    :width: 600pt
 
    : Select and Launch GELATO
 
 Import Grid
-------------------
+------------------------------------------------------------------------------------------------------------------------
 
 Right click [Grid(No Data)] and select [Import] as :numref:`02_import_grid1`.
 
@@ -634,9 +634,7 @@ Right click [Grid(No Data)] and select [Import] as :numref:`02_import_grid1`.
 
    : [Import Grid(1)]
 
-From the [Select Import File] window as :numref:`02_import_grid2`,
-choose [Case1.cgn] in the folder [Nays2d+Flow] which is produced 
-by the [Nays2d+] calculation in the previous section.
+From the [Select Import File] window as :numref:`02_import_grid2`, choose [Case1.cgn] in the folder [Nays2d+Flow] which is produced by the [Nays2d+] calculation in the previous section.
 
 .. _02_import_grid2:
 
@@ -666,10 +664,10 @@ Press [Yes] button when warning message is coming out as
    : [Grid Import Completed]
 
 Tracer Tracking Simulation by GELATO
--------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
 Setting Simulation Condition
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 From the main menu bar, when you select [Calculation condition]->[Setting]. 
 [Calculation Condition] window appears, and in this window,
@@ -714,14 +712,7 @@ of sub-grid turbulence.
 
    : Diffusion Condition
 
-In addition.Figure 100 The [CGNS file to read the flow calculation results] in the 
-[CGNS file to read the flow calculation results] is the same as the one in the previous section
-[Flow calculation with Nays2d+]. 
-Select [Case1.cgn] in the [Nays2d+Flow] project folder where you saved the results of ( Figure 103)
-
-In addition, the [Flow information input file] in :numref:`02_joken20`,
-is the same file with the [Case1.cgn] which was produced by the flow simulation of [Nays2d+]
-in the previous section  (:numref:`02_joken24`).
+| In addition, the [Flow information input file] in :numref:`02_joken20`, is the same file with the [Case1.cgn] which was produced by the flow simulation of [Nays2d+] in the previous section  (:numref:`02_joken24`).
 
 .. _02_joken24:
 
@@ -733,24 +724,22 @@ in the previous section  (:numref:`02_joken24`).
 
 
 Run GELATO
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-From the main menu, select [Simulation]]->[Run], then you will be asked to save project as usual,
-save project as recommended.
-( :numref:`02_save_project3`).
+From the main menu, select [Simulation]]->[Run], then you are asked as will be asked as :numref:`02_save_project3` . 
+so, click [OK] and save project.
 
 .. _02_save_project3:
 
-.. figure:: images/02/save_project3.png
+.. figure:: images/01/warning.png
    :align: center
    :width: 400pt
 
    : Saving GELATO Project(1)
 
 
-In the :numref:`02_save_project4`,  
-either [Save as file (\*.ipro)] or [Save as Project] will do, but in this example, 
-the file is saved as [GELATO1]. 
+| In the :numref:`02_save_project4`, either [Save as file (\*.ipro)] or [Save as Project] will do. 
+| In this example, save as [GELATO_A=0]. 
 
 .. _02_save_project4:
 
@@ -781,7 +770,7 @@ When the computation starts, :numref:`02_jikko20` appears, and when the computat
    : Execution of GELATO(2)
 
 Showing the Results of GELATO
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 From the main menu, select [Calculation Result]->[Open new 2D Post Processing Window], and
 the calculation results are shown (:numref:`02_kekka20`)
@@ -851,7 +840,7 @@ select [Animation]->[Start/Stop], then the animation starts( :numref:`02_GELATO0
 There is almost no diffusion and the tracers are just flowing straightly.
 
 Comparison of the Turbulent Diffusivity
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Select [Calculation Condition]->[Setting] and open [Calculation Condition] window.
 As shown in :numref:`02_A01`, set in the [Group]->[Diffusion Condition], [Diffusivity Correction]->[Yes] 
@@ -905,11 +894,11 @@ When we compared with the experimental results of the :numref:`02_jikken`,
 it seem that the case with A=10, :numref:`02_GELATO10`, is the closest to the experiment. 
 
 Cloning of the Tracers
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In the main menu, select [Calculation Condition]->[Setting] to show [Calculation Condition].
-In the [Calculation Condition] window, select [Tracer Cloning and Amalgamation], set parameters as
-:numref:`02_clone01`.
+In the [Calculation Condition] window, select [Tracer Cloning and Amalgamation], set parameters as :numref:`02_clone01`.
+
 Select [Diffusion Condition] and set [A=10] and press[OK] as :numref:`02_clone01-1`.
 Then execute the GELATO solver by choosing [Simulation]->[Run], and show the results (:numref:`02_clone10`).
 
@@ -960,12 +949,9 @@ When this is animated, it becomes as :numref:`02_clone10_gen`.
 
    : Tracers Clone Animation(Maximum 20 Generations, A=10, Color-coded View)
 
-As described in  :ref:`Overview` , the substantial weight in the 10th generation is 
-W=0.00195, and in the 20th generation is W=0.00000195. 
-Therefore, :numref:`02_clone02`, the concentrations of the tracers of green, yellow, red, etc. 
-are logarithmically lower than that of the central blue tracers. 
-To see the real concentration, the substantial concentration in each cell is visualized by 
-the following procedure. 
+| As described in  :ref:`Overview` , the substantial weight in the 10th generation is W=0.00195, and in the 20th generation is W=0.00000195. 
+| Therefore, :numref:`02_clone02`, the concentrations of the tracers of green, yellow, red, etc. are logarithmically lower than that of the central blue tracers. 
+| To see the real concentration, the substantial concentration in each cell is visualized by the following procedure. 
 
 1. Uncheck the check box at [Scalar] in the object browser (:numref:`02_concent1`).
 
@@ -1031,7 +1017,7 @@ The diffusion situation is similar to that of the green dye in the experimental 
 :numref:`02_jikken`. 
 
 Flow Visualization using Tracer Cloning
------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
 Flow visualization using tracer cloning is shown in this section.
 In the main menu, click [Calculation Condition], and set parameters in the [Group] of
@@ -1061,7 +1047,7 @@ Then after running  the GELATO solver.
 in the [Object Browser], remove check mark from [Weighted numbers of tracers], put 
 check marks in boxes at [Particles], [Scalar] and remove the check mark form the [Generation].
 
-From the main menu, select [Animation]->[Srat/Stop], and the animation with evenly distributed tracers in the
+From the main menu, select [Animation]->[Start/Stop], and the animation with evenly distributed tracers in the
 whole channel is visualized.
 
 .. _02_kashika:
@@ -1074,7 +1060,7 @@ whole channel is visualized.
 
 
 Swimming Fish Simulation
----------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
 Set the following parameters in the [Computation of Fish Motion] in the 
 [Calculation Condition] window menu followed by selecting 
@@ -1143,15 +1129,14 @@ and select [Animation]->[Start/Stop].  Then :numref:`02_fish7` is played.
    : Swimming Fish Animation
   
 Driftwood Tracking by NaysDW2 and Visualization
-===================================================
+========================================================================================================================
 
-In this section, driftwood tracking simulation by NaysDW2 (Nays Driftwood 3D) is shown.
+In this section, driftwood tracking simulation by NaysDW2 (Nays Driftwood 2D) is shown.
 
 Select a Solver
-------------------
+------------------------------------------------------------------------------------------------------------------------
 
-From the iRIC startup screen, click [Create New Project], and select 
-[NaysDw2(Simple 2D Driftwood Tracker)] as shown in :numref:`02_select_Dw2`, and press [OK].
+From the iRIC startup screen, click [Create New Project], and select [NaysDw2(Simple 2D Driftwood Tracker)] as shown in :numref:`02_select_Dw2`, and press [OK].
 
 .. _02_select_Dw2:
 
@@ -1161,36 +1146,50 @@ From the iRIC startup screen, click [Create New Project], and select
 
    : Selecting [NaysDw2] (Simple 2D Driftwood Tracker)
 
-Import Computational Grid
------------------------------
+Select the flow calculation project
+------------------------------------------------------------------------------------------------------------------------
 
-As shown in :numref:`02_import_grid3`, from the [Object Browser], right click
-[Grid(No data)], and press [Import]
+As shown in :numref:`02_select_project1`, click [...] and select CGNS files that calculated Nays2D+ project in " :ref:`02_Flow_Calculation_by_Nays2d+` "
 
-.. _02_import_grid3:
+.. _02_select_project1:
 
-.. figure:: images/02/import_grid3.png
+.. figure:: images/02/select_project_01.png
    :align: center
-   :width: 100%
+   :width: 400pt
 
-   : [Import Grid(1)]
+   : [Select CGNS(1)]
 
-When the file selection window appears, 
-select [Case1.cgn] in the [Nays2d+Flow] folder in which the computational
-results of the [Nays2d+] stored.
-(:numref:`02_import_grid4`)
 
-.. _02_import_grid4:
+.. _02_select_project2:
 
-.. figure:: images/02/import_grid2.png
+.. figure:: images/02/select_project_02.png
    :align: center
    :width: 600pt
 
-   : [Import Grid(2)]
+   : [Select CGNS(2)]
 
+When you select a CGNS file, the specifications of the selected project will be displayed, such as :numref:`02_select_project3` . Then, go ahead and click [OK].
 
-Neglect the waring message as :numref:`02_import6`, press [Yes], and the grid importing is completed
-(:numref:`02_import9`).
+.. _02_select_project3:
+
+.. figure:: images/02/select_project_03.png
+   :align: center
+   :width: 400pt
+
+   : [Select CGNS(3)]
+
+So, you will be asked whether to import the grid, so click [Yes] ( :numref:`02_select_project4` ). 
+
+.. _02_select_project4:
+
+.. figure:: images/02/select_project_04.png
+   :align: center
+   :width: 300pt
+
+   : [Select CGNS(4)]
+
+| Then A warning, as shown in :numref:`02_import8` , will then appear, but simply ignore it and click [Yes] again. 
+| This will complete the grid import process, as shown in :numref:`02_import9` .
 
 .. _02_import8:
 
@@ -1211,12 +1210,12 @@ Neglect the waring message as :numref:`02_import6`, press [Yes], and the grid im
 
 
 Setting Condition
-------------------
+------------------------------------------------------------------------------------------------------------------------
 
 From the main menu, select [Calculation Condition]->[Setting],and set the calculation condition 
 as follows.
 
-In the [Calculation Condition] window, press file selection bar as :numref:`02_dw1`.
+Set other parameters as :numref:`02_dw1` ～ :numref:`02_dw4`
 
 .. _02_dw1:
 
@@ -1224,20 +1223,15 @@ In the [Calculation Condition] window, press file selection bar as :numref:`02_d
    :align: center
    :width: 600pt
 
-   : Select CGNS File to Read(1)
-   
-In the [Select File] window, :numref:`02_dw2`, select [Case1.cgn] which contains the calculation results of
-the [Nays2d+] in the previous section.
+   : Other settings in [Basic Setting]
 
 .. _02_dw2:
 
-.. figure:: images/02/joken24.png
+.. figure:: images/02/dw2.png
    :align: center
    :width: 600pt
 
-   : Select CGNS File
-   
-Set other parameters in [Basic Setting] as :numref:`02_dw3`. 
+   : Other settings in [Driftwood feeding condition]
 
 .. _02_dw3:
 
@@ -1245,9 +1239,7 @@ Set other parameters in [Basic Setting] as :numref:`02_dw3`.
    :align: center
    :width: 600pt
 
-   : Other settings in [Basic Setting]
-
-Set parameters in [Driftwood Feeding Condition] as :numref:`02_dw4`. 
+   : [Driftwood Feeding Condition]
 
 .. _02_dw4:
 
@@ -1255,22 +1247,11 @@ Set parameters in [Driftwood Feeding Condition] as :numref:`02_dw4`.
    :align: center
    :width: 600pt
 
-   : [Driftwood Feeding Condition]
-
-Set [DEM Coefficients] parameters as :numref:`02_dw5`, and press [OK]. 
-
-
-.. _02_dw5:
-
-.. figure:: images/02/dw5.png
-   :align: center
-   :width: 600pt
-
    : [DEM Coefficients]
 
 
 Run Driftwood Simulation
-----------------------------
+------------------------------------------------------------------------------------------------------------------------
 
 From the main menu, select [Simulation]->[Run] as :numref:`02_dw6`. 
 
@@ -1286,7 +1267,7 @@ When you are asked [Do you want to save?] as :numref:`02_dw7`, press [Yes] and s
 
 .. _02_dw7:
 
-.. figure:: images/02/save_project3.png
+.. figure:: images/01/warning.png
    :align: center
    :width: 400pt
 
@@ -1328,7 +1309,7 @@ Then click [OK] to finish calculation.
 
 
 Visualization of driftwood motion
---------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
 From the main menu, select [Calculation Result]->[Open New 2D Post-processing Window] as :numref:`02_dw12`.
 
@@ -1340,8 +1321,7 @@ From the main menu, select [Calculation Result]->[Open New 2D Post-processing Wi
 
    : Open New 2D Post-processing Window
 
-In the [Object Browser] of :numref:`02_dw13`, put check marks in the boxes at [iRICZone], [Scalar(node)] and 
-[res_Velocity(magnitude)], right click [res_Velocity(magnitude)] and choose [Property]. 
+In the [Object Browser] of :numref:`02_dw13`, put check marks in the boxes at [iRICZone], [Scalar] and [Velocity(magnitude)], right click [Velocity(magnitude)] and choose [Property]. 
 
 
 .. _02_dw13:
@@ -1374,13 +1354,11 @@ as :numref:`02_dw15`, and start animation as :numref:`02_dw16`
 
    : Start Animation
 
-
-
 .. _02_dw16:
 
 .. figure:: images/02/dw.gif
    :align: center
-   :width: 100%
+   :width: 80%
 
    : Driftwood Tracking Animation
 

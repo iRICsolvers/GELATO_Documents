@@ -457,8 +457,7 @@ When you click [OK] and save project, the computation starts as :numref:`01_GELA
 
    : Launch GELATO
 
-When the computation finishes, :numref:`01_GELATO_jikko_2` appears, and 
-click [OK] for confirmation.
+When the computation finishes, :numref:`01_GELATO_jikko_2` appears, and click [OK] for confirmation.
 
 .. _01_GELATO_jikko_2:
 
@@ -482,8 +481,8 @@ then [2D Post Processing Window] appears as :numref:`01_GELATO_kekka_0`.
 
    : 2D Post Processing Window
 
-Right-click [Primary Nomal Tracers] and [Secondary Nomal Tracers] in the [Object Browser] and click [propertie]. 
-Then [Particles Scalar Setting] that appears,and you can set the primary and secondary have different colors by setting like :numref:`01_GELATO_kekka_2`.
+| Right-click [Primary Nomal Tracers] and [Secondary Nomal Tracers] in the [Object Browser] and click [propertie]. 
+| Then [Particles Scalar Setting] that appears,and you can set the primary and secondary have different colors by setting like :numref:`01_GELATO_kekka_2`.
 
 .. _01_GELATO_kekka_2:
 

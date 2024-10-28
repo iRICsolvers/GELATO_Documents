@@ -37,7 +37,7 @@ rod-like shape tracers such as driftwood tracers and can be tracked with their o
 
 The computation of GELATO is performed by the following procedure.
 
-(1) Computation of flows with flow calculation solvers (Nays2dh, Nays2dFlood, Nays2d+, etc.)
+(1) Computation of flows with flow calculation solvers (Nays2DH, Nays2dFlood, Nays2d+, etc.)
 
 (2) Saving of flow calculation results (CGNS file)
 

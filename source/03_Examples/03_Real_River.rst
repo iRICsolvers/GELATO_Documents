@@ -200,8 +200,6 @@ polygon has to be located at lower layer than the [Obstacle] polygons (:numref:`
 Set Manning's Roughness Coefficient
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-[マニングの粗度係数]よりポリゴンから全格子囲みn=0.030を入力する. 
-
 In the [Object Browser] under the group of [Geographic Data], right click 
 [Manning's roughness coefficient] and select [Add]->[Polygons], and 
 make a polygon covering all the grid domain, and input n=0.030
@@ -322,7 +320,7 @@ in the startup window of the iRIC,  select [GELATO] and press [OK] as
 .. _03_024:
 
    
-.. figure:: images/03/024.png
+.. figure:: images/01/GELATO_kido.png
    :align: center
    :width: 600pt
 
@@ -338,7 +336,7 @@ Right click [Grid(No Data)] in the [Object Browser] and select [Import] as
 
 .. _03_025:
    
-.. figure:: images/03/025.png
+.. figure:: images/01/GELATO_import.png
    :align: center
    :width: 100%
 
