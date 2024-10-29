@@ -106,7 +106,7 @@ When defined as the first tracer submitted is the first generation, the one gene
 by the first split is the second generation, and the next one is the third generation...
 The wight is 1/2 at the second generation, the weight is 1/2 in the third generation, 
 and the weight is 1/4 in the fourth generation.  In the :math:`n` generation, considering 
-it is experienced :math:`2^{n-1}` times cloning, it's weight becomes  :math:`W={1}/{2^{n-1}` .
+it is experienced :math:`2^{n-1}` times cloning, it's weight becomes  :math:`W={1}/{2^{n-1}}` .
 Using this, we can count the total number of weighted tracers in each cell to 
 obtain concentration can be calculated. 
 Thus, for example, in the 10th generation when :math:`n=10` , weight is :math:`W=\cfrac{1}{2^9}=0.000195`,
