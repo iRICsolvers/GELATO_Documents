@@ -51,7 +51,7 @@ From the iRIC startup screen, click [Create New Project], and select
 
    : Solver Selection
 
-A window titled as「Untitled- iRIC 4.x.xxxx [Nays2DH iRIC4X 1.0 64bit]」appears.
+A window titled as"Untitled- iRIC 4.x.xxxx [Nays2DH iRIC4X 1.0 64bit]"appears.
 
 .. _02_mudai:
 
@@ -250,7 +250,7 @@ From the main menu, when you select [Simulation]->[Run], you will get the messag
    :align: center
    :width: 400pt
 
-   : 「Do you want to save?」
+   : "Do you want to save?"
 
 .. _02_jikko2:
 
@@ -258,7 +258,7 @@ From the main menu, when you select [Simulation]->[Run], you will get the messag
    :align: center
    :width: 100%
 
-   : 「Nays2DH is running」
+   : "Nays2DH is running"
  
 When the computation finished, save the results by selecting [Calculation Result]->[Save], from the main menu.
 
@@ -288,7 +288,7 @@ open [Scalar Settings], and set parameters as :numref:`02_hyoji1`.
    :align: center
    :width: 70%
 
-   : 「Scalar Setting」
+   : "Scalar Setting"
 
 In the object browser, put check marks in [Arrow] and [Velocity(m)], 
 right click [Arrow], show [Property] and press it, open [Arrow Setting Window]
@@ -481,7 +481,7 @@ Select [Grid]->[Attribute Mapping]->[Execute] as :numref:`02_mapping2`.
    :align: center
    :width: 100%
 
-   : 「Execute Mapping」
+   : "Execute Mapping"
 
 As :numref:`02_mapping3`, you will be asked which [Geographic Data] to be mapped.
 Put check mark in the box of [Elevation(m)], and press [OK].
@@ -506,7 +506,7 @@ When the mapping is completed, press [OK] as :numref:`02_mapping4`.
    : Mapping Completed
 
 
-Setting Calculation Condition for Nays2d＋
+Setting Calculation Condition for Nays2d+
 ------------------------------------------------------------------------------------------------------------------------
 
 In the window of [Calculation Condition] which appears when you select [Calculation Condition]->[Setting],
@@ -1215,7 +1215,7 @@ Setting Condition
 From the main menu, select [Calculation Condition]->[Setting],and set the calculation condition 
 as follows.
 
-Set other parameters as :numref:`02_dw1` ～ :numref:`02_dw4`
+Set other parameters as :numref:`02_dw1` ~ :numref:`02_dw4`
 
 .. _02_dw1:
 

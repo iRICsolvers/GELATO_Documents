@@ -139,7 +139,6 @@ select [Create grid from polygonal line and width] in the next window
 
 
 Assign channel center points from the upstream side to down stream side as :numref:`03_010`.
-上流側から下流へ向けて中心位置を選択する. 
 
 .. _03_010:
 
