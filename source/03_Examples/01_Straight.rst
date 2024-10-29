@@ -447,7 +447,7 @@ When you click [OK] and save project, the computation starts as :numref:`01_GELA
    :align: center
    :width: 400pt
 
-   : Do you want to save?
+   : warning
 
 .. _01_GELATO_jikko_1:
 
@@ -470,8 +470,7 @@ When the computation finishes, :numref:`01_GELATO_jikko_2` appears, and click [O
 Visualization of Computational Results
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-From the main menu, select [Calculation Result]->[Open ne 2D Post-processing Window],
-then [2D Post Processing Window] appears as :numref:`01_GELATO_kekka_0`.
+From the main menu, select [Calculation Result]->[Open ne 2D Post-processing Window] as :numref:`01_GELATO_kekka_0`, then [2D Post Processing Window] will appear.
 
 .. _01_GELATO_kekka_0:
 
@@ -479,7 +478,7 @@ then [2D Post Processing Window] appears as :numref:`01_GELATO_kekka_0`.
    :align: center
    :width: 100%
 
-   : 2D Post Processing Window
+   : Open 2D Post Processing Window
 
 | Right-click [Primary Nomal Tracers] and [Secondary Nomal Tracers] in the [Object Browser] and click [propertie]. 
 | Then [Particles Scalar Setting] that appears,and you can set the primary and secondary have different colors by setting like :numref:`01_GELATO_kekka_2`.
@@ -520,7 +519,7 @@ Setting Computational Condition
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Change the calculation conditions to take into account for the effect of turbulent diffusion. 
-From the main menu, select [Calculation Conditions] → [Setting], and show the :numref:`01_GELATO_joken_5`.
+From the main menu, select [Calculation Conditions] → [Setting], and show the :numref:`01_GELATO_joken_6`.
 check the box of [Diffusion Condition]->[Diffusivity Correction] , set the parameter [A Value] to [1], and then click "OK".
 
 .. _01_GELATO_joken_6:

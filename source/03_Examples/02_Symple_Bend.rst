@@ -250,7 +250,7 @@ From the main menu, when you select [Simulation]->[Run], you will get the messag
    :align: center
    :width: 400pt
 
-   : "Do you want to save?"
+   : "warning"
 
 .. _02_jikko2:
 
@@ -671,11 +671,11 @@ Setting Simulation Condition
 
 From the main menu bar, when you select [Calculation condition]->[Setting]. 
 [Calculation Condition] window appears, and in this window,
-set parameters in the [Groups] of [Basic Settings], [Normal Tracers Supplying Condition] 
-and [Diffusion Condition], as
+set parameters as
 :numref:`02_joken20`, 
-:numref:`02_joken21`, and  
-:numref:`02_joken22`, respectively.
+:numref:`02_joken21`,
+:numref:`02_joken22`, and  
+:numref:`02_joken23`, respectively.
 In this section, we first perform tracer tracking without considering the effect 
 of sub-grid turbulence.
 
@@ -1025,8 +1025,6 @@ In the main menu, click [Calculation Condition], and set parameters in the [Grou
 :numref:`02_settei1` and :numref:`02_settei2`, respectively, and press [OK].
 
 
-:numref:`02_settei1` 
-
 .. _02_settei1:
 
 .. figure:: images/02/settei1.png
@@ -1263,7 +1261,7 @@ From the main menu, select [Simulation]->[Run] as :numref:`02_dw6`.
 
    : [Simulation]->[Run]
 
-When you are asked [Do you want to save?] as :numref:`02_dw7`, press [Yes] and save the project.
+When you are asked as :numref:`02_dw7`, press [Yes] and save the project.
 
 .. _02_dw7:
 
@@ -1271,7 +1269,7 @@ When you are asked [Do you want to save?] as :numref:`02_dw7`, press [Yes] and s
    :align: center
    :width: 400pt
 
-   : [Do you want to save ?]
+   : warning
 
 As :numref:`02_dw8`, when you are asked [How to save the project], in this example,
 select [Save as project], and press [OK]. Choose an empty folder to save project, and
