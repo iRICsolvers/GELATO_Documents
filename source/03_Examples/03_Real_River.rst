@@ -149,8 +149,7 @@ Assign channel center points from the upstream side to down stream side as :numr
    : Assign Center Points 
 
 
-In the [Grid Creation] window, :numref:`03_011`, input values as 
-Ni=200, Nj=60 and W=120, then the grid size becomes about 3.2mx2m as :numref:`03_012`.
+In the [Grid Creation] window, :numref:`03_011`, input values as Ni=290, Nj=56 and W=140, then the grid size becomes about 2.5mx5.0 m as :numref:`03_012`.
 
 .. _03_011:
 
