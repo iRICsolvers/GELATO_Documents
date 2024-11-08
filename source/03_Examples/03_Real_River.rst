@@ -467,7 +467,7 @@ Visualization of the Calculation Results
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 From the main menu, select [Calculation Result]->[Open new 2D Post-Processing Window].
-Put check marks in [Background Images(Internet)] and [GSI(Ortho Images)(Japan only)] in the Object Browser, 
+Put check marks in [Background Images(Internet)] and [国土地理院(標準地図)] in the Object Browser, 
 as :numref:`03_035`.
 
 .. _03_035:
