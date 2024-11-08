@@ -1,7 +1,7 @@
 Introduction
 ============
 
-GELATO(Universal Tracer Tracker) is a tool to track and visualize 
+GELATO(GEneralized LAgrangian Tracking with Optimization) is a tool to track and visualize 
 the trajectory of various materials specified by the user using 
 the calculation result of various flow calculation solvers 
 implemented in iRIC. 
